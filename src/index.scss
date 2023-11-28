@@ -1,0 +1,24 @@
+@import url('../global.scss');
+/* Estilo del scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+    
+  }
+  
+  /* Estilo del track (la barra en sí) */
+  ::-webkit-scrollbar-track {
+    background-color: var(--color-principal); /* Color del track */
+  }
+  
+  /* Estilo del handle (el "botón" deslizante) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del handle */
+    border-radius: 6px; /* Borde redondeado del handle */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilo del handle al pasar el mouse sobre él */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color del handle al pasar el mouse sobre él */
+    transition: background-color 0.3s ease;
+  }

@@ -1,0 +1,123 @@
+@import url('../global.scss');
+
+.presentation-text{
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 1px solid;
+  color: var(--color-secundario);
+  overflow: hidden;
+}
+
+.description-text{
+  color: var(--color-secundario);
+}
+
+.atropos-inner{
+  overflow: visible!important;
+}
+
+.languages-mains{
+  display: inline-block;
+  -webkit-animation: flotacion 5s ease-in-out infinite;
+  animation: flotacion 5s ease-in-out infinite;
+  height: 350px;
+  width: 350px;
+}
+
+.title{
+  font-size: 30px;
+  margin-top: 3rem;
+  color: var(--color-secundario);
+}
+
+.nombre{
+  font-size: 42px;
+  width: 17ch;
+  height: 54px;
+  
+  -webkit-animation: escribir 2s steps(17), blink .5s infinite step-end alternate;
+  
+  animation: escribir 3.4s steps(17),
+  blink .5s infinite step-end alternate;
+}
+
+.description{
+  font-size: 28px;
+  width: 18ch;
+  height: 38px;
+
+  -webkit-animation: escribir 2s steps(18), 
+    blink .5s infinite step-end alternate;
+
+  animation: escribir 5s steps(18),
+    blink .5s infinite step-end alternate;
+}
+@media screen and (max-width: 536px){
+  .nombre{
+    font-size: 2rem;
+    height: 40px;
+  }
+
+  .description{
+    font-size: 1.5rem;
+    height: 34px;
+  }
+}
+
+.Java{filter: drop-shadow(0 0 4px RGBA(200, 60, 55, 0.8))}
+
+.Python{filter: drop-shadow(0 0 4px RGBA(54, 109, 155, 0.8))}
+
+.JavaScript{filter: drop-shadow(0 0 4px RGBA(240, 219, 79, 0.8))}
+
+.Angular{filter: drop-shadow(0 0 4px RGBA(226, 50, 55 , 0.8))}
+
+.RxJs{filter: drop-shadow(0 0 4px RGBA(220, 30, 133, 0.8))}
+
+.FastAPI{filter: drop-shadow(0 0 4px RGBA(5, 153, 139, 0.8))}
+
+.Flask{filter: drop-shadow(0 0 4px RGBA(255, 255, 255, 0.8))}
+
+.Spring{filter: drop-shadow(0 0 4px RGBA(119, 188, 31, 0.8))}
+
+.contact{
+  img{
+    height: 32px;
+    margin-right: 5rem;
+  }
+}
+
+@keyframes escribir{
+  from {width: 0}
+}
+
+@keyframes blink {
+  50% {border-color: transparent}
+}
+
+@keyframes flotacion {
+  0% {transform:translateY(0)}
+  50% {transform:translateY(-15px)}
+  100% {transform:translateY(0)}}
+
+.switch-mode{
+  border: 1px solid var(--color-secundario);
+  color: var(--color-secundario);
+  background-color: transparent;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 5px;
+  width: 115px;
+  height: 40px;
+  transition: .3s ease
+}
+
+.switch-mode:hover{
+  background-color: var(--shadow-3);
+  font-size: 18px;
+  width: 125px;
+  height: 45px;
+  border-radius: 25px;
+  transition: .3s ease
+}
