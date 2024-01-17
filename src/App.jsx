@@ -107,11 +107,6 @@ function App() {
         <Cards components={info.tecnologiasCards}></Cards>
       </div>
 
-      <div className='mt-5 mb-5'>
-        <span className="title">Auto-Tech</span>
-        <VideoPlayer videoUrl="src/assets/2023-11-24 01-03-54.mp4" />
-      </div>
-
     </div>
     </>
   )
