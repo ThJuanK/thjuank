@@ -8,7 +8,7 @@
 </div>
 
 ## 🤓 Sobre mí 
-* 🚀 Desarrollador FullStack
+* 🚀 Desarrollador FullStack (+2 años de experiencia laboral)
 * ☁️ DevOps en AWS
 * 💻 Estudiante de Ingeniería en Sistemas
 * 🧠 Creativo (a veces más de la cuenta)
